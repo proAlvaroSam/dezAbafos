@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Criar desabafo</title>
+  <link rel="stylesheet" href="styles/theme-dark.css">
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <h1><a href="index.html" style="color:inherit; text-decoration:none">Desabafos</a></h1>
+      <nav><a href="index.html" class="btn">Voltar</a></nav>
+    </header>
+
+    <main class="feed" role="main">
+      <section class="compose">
+        <form id="create-form">
+          <label style="display:block; font-size:13px; color:var(--muted); margin-bottom:6px">Título (opcional)</label>
+          <input id="title" type="text" placeholder="Título breve" style="width:100%; padding:8px; margin-bottom:8px; border-radius:8px; background:transparent; color:var(--text); border:1px solid var(--edge)" />
+
+          <label style="display:block; font-size:13px; color:var(--muted); margin-bottom:6px">Desabafo</label>
+          <textarea id="content" placeholder="Escreva seu desabafo..." required style="width:100%; min-height:140px; padding:8px; border-radius:8px; background:transparent; color:var(--text); border:1px solid var(--edge)"></textarea>
+
+          <div style="display:flex; align-items:center; gap:12px; margin-top:10px;">
+            <label style="color:var(--muted); font-size:13px"><input id="allowComments" type="checkbox" checked/> Permitir comentários</label>
+            <div style="margin-left:auto">
+              <button class="btn" type="button" onclick="location.href='index.html'">Cancelar</button>
+              <button class="btn primary" type="submit">Publicar</button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <small>Feito para desabafar — respeite a comunidade</small>
+    </footer>
+  </div>
+  <script src="scripts/app.js"></script>
+</body>
+</html>
